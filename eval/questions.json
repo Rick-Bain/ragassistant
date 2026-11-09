@@ -1,0 +1,360 @@
+[
+  {
+    "id": "q01",
+    "document": "cv",
+    "type": "factual",
+    "question": "Which company did Rick work for as a Junior Software Developer, and during which period?",
+    "expected_answer": "Techl33t Infosystems, from March 2025 to November 2025.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q02",
+    "document": "cv",
+    "type": "factual",
+    "question": "Where was the Centroid-X-GAN research published?",
+    "expected_answer": "At ICDEC 2024, the 3rd International Conference on Data, Electronics & Computing.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q03",
+    "document": "cv",
+    "type": "factual",
+    "question": "What image size does Centroid-X-GAN generate, and what is the best FID score it reports?",
+    "expected_answer": "256x256 chest X-ray images; FID scores as low as 1.11 for key disease classes.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q04",
+    "document": "cv",
+    "type": "list",
+    "question": "Which technologies were used to build the Calcutta Fresh Foods platform?",
+    "expected_answer": "Next.js, Node.js, PostgreSQL, Tailwind, shadcn and Razorpay.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q05",
+    "document": "cv",
+    "type": "list",
+    "question": "What delivery rules were implemented in the grocery platform?",
+    "expected_answer": "Slot scheduling, skipping Mondays and a 9 AM cut-off (plus OTP login and ExcelJS-powered MIS reporting elsewhere in the project).",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q06",
+    "document": "cv",
+    "type": "factual",
+    "question": "How was the grocery platform deployed, and where was it migrated to?",
+    "expected_answer": "Deployed on a Hostinger VPS with Nginx and PM2, then migrated to GCP with Dockerized CI/CD workflows.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q07",
+    "document": "cv",
+    "type": "factual",
+    "question": "What is Rick's highest qualification and where did he study it?",
+    "expected_answer": "Master of Computer Applications (MCA) from the Institute of Engineering and Management, Kolkata, June 2024.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q08",
+    "document": "cv",
+    "type": "list",
+    "question": "Which generative AI skills does the CV list?",
+    "expected_answer": "Prompt engineering, Claude API (Anthropic), LLM integration and AI-assisted application development.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q09",
+    "document": "cv",
+    "type": "list",
+    "question": "Which databases does Rick list in his skills?",
+    "expected_answer": "PostgreSQL, MySQL and MongoDB.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q10",
+    "document": "cv",
+    "type": "factual",
+    "question": "What mobile app work is mentioned in the CV?",
+    "expected_answer": "A React Native companion mobile app, published to the Google Play Console, including release builds, versioning and store listing.",
+    "expected_source": "RickBain.pdf"
+  },
+  {
+    "id": "q11",
+    "document": "certificate",
+    "type": "factual",
+    "question": "Which course did Rick complete on LinkedIn Learning?",
+    "expected_answer": "Introduction to Web Design and Development.",
+    "expected_source": "LinkedIn_Learning_Certificate.pdf"
+  },
+  {
+    "id": "q12",
+    "document": "certificate",
+    "type": "factual",
+    "question": "When was the course completed and how long did it take?",
+    "expected_answer": "Dec 03, 2023; 1 hour 52 minutes.",
+    "expected_source": "LinkedIn_Learning_Certificate.pdf"
+  },
+  {
+    "id": "q13",
+    "document": "certificate",
+    "type": "list",
+    "question": "Which top skills are covered in the certificate?",
+    "expected_answer": "Web Development, Web Design and HTML.",
+    "expected_source": "LinkedIn_Learning_Certificate.pdf"
+  },
+  {
+    "id": "q14",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "What is the title of the minor project, and for which degree and year was it done?",
+    "expected_answer": "Latency Space Alignment for Medical Image to Clinical Text Analysis; MCA 2nd year at the Institute of Engineering & Management (IEM).",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q15",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "Which paper does the project's review focus on?",
+    "expected_answer": "LIMITR: Leveraging Local Information For Medical Image-Text Representation, which works with chest X-ray images and their radiological reports.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q16",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "How were feature vectors for the clinical words extracted, and how many dimensions did they have?",
+    "expected_answer": "With Word2Vec from gensim, using a vector size of 100.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q17",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "Which pretrained model was used to extract features from the X-ray images?",
+    "expected_answer": "A CustomModel built on a pretrained ResNet18, taking features from the second-to-last layer, with global average pooling.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q18",
+    "document": "minor_project",
+    "type": "explanation",
+    "question": "How are the image vectors and the label vectors combined before training?",
+    "expected_answer": "A dot product is calculated between image_array and label_array, and the result is stored in product_array.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q19",
+    "document": "minor_project",
+    "type": "list",
+    "question": "What are the hidden layer sizes of the neural network?",
+    "expected_answer": "Five hidden layers with 100, 500, 1000, 500 and 100 neurons, all using ReLU; the input has 15 features.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q20",
+    "document": "minor_project",
+    "type": "list",
+    "question": "How was the data split for training, which loss function was used, and how many epochs were run?",
+    "expected_answer": "80% training and 20% testing, Binary Cross Entropy Loss (BCELoss), 5000 epochs.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q21",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "How many images and how many unique labels were used for the binary label representation?",
+    "expected_answer": "1000 images and 14 unique labels.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q22",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "What future work do the authors propose?",
+    "expected_answer": "Experimenting with other pretrained models to reduce the loss and match medical images with their clinical text or labels more accurately.",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q23",
+    "document": "minor_project",
+    "type": "factual",
+    "question": "Who was the project guide?",
+    "expected_answer": "Supratim Ghosh (the Head of Department is Dr. Soumi Dutta).",
+    "expected_source": "MEDICAL_IMAGE.pdf"
+  },
+  {
+    "id": "q24",
+    "document": "book",
+    "type": "factual",
+    "question": "Who wrote Principles of Artificial Intelligence, and at which university was the author?",
+    "expected_answer": "Nils J. Nilsson, Stanford University.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q25",
+    "document": "book",
+    "type": "explanation",
+    "question": "How does the preface say the book's ideas are organized, instead of by application area?",
+    "expected_answer": "By general computational concepts: the kinds of data structures used, the operations performed on them, and the properties of control strategies; with emphasis on generalized production systems and the predicate calculus.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q26",
+    "document": "book",
+    "type": "list",
+    "question": "Which application areas of AI does the prologue describe?",
+    "expected_answer": "Natural language processing, intelligent retrieval from databases, expert consulting systems, theorem proving, robotics, automatic programming, combinatorial and scheduling problems, and perception problems.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q27",
+    "document": "book",
+    "type": "explanation",
+    "question": "What are the two uninformed graph-search procedures, and how does each order the nodes on OPEN?",
+    "expected_answer": "Depth-first (deepest nodes first, with a depth bound) and breadth-first (in increasing order of depth).",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q28",
+    "document": "book",
+    "type": "explanation",
+    "question": "What does the book mean by 'heuristic power'?",
+    "expected_answer": "A search method has more heuristic power than another if its averaged combination cost of path cost and search effort is lower; this does not require giving up the guarantee of finding a minimal cost path.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q29",
+    "document": "book",
+    "type": "explanation",
+    "question": "What does the evaluation function f(n) estimate in algorithm A*?",
+    "expected_answer": "The cost of a minimal cost path from the start node through n to a goal, written f(n) = g(n) + h(n); the node on OPEN with the smallest f is expanded next.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q30",
+    "document": "book",
+    "type": "explanation",
+    "question": "What does it mean for a search algorithm to be admissible?",
+    "expected_answer": "It always terminates in an optimal path from the start node to a goal node whenever a path exists; the book shows A* is admissible.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q31",
+    "document": "book",
+    "type": "explanation",
+    "question": "Why is backtracking usually preferred over depth-first graph search?",
+    "expected_answer": "It is simpler to implement and uses less storage, since it saves only one path to a goal rather than the whole record of the search.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q32",
+    "document": "book",
+    "type": "explanation",
+    "question": "What ordering of successors maximizes the number of cutoffs in the alpha-beta procedure?",
+    "expected_answer": "Generating successors in order of their true backed-up values (lowest first for MIN nodes, highest first for MAX nodes), which minimizes the number of tip nodes generated.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q33",
+    "document": "book",
+    "type": "explanation",
+    "question": "What is the unit-preference strategy in resolution?",
+    "expected_answer": "A modification of the set-of-support strategy that tries to select single-literal clauses (units) as parents; the resolvents have fewer literals, which focuses the search toward the empty clause.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q34",
+    "document": "book",
+    "type": "explanation",
+    "question": "How does the STRIPS system use its goal stack?",
+    "expected_answer": "It works on the top goal; a single-literal goal is replaced by an F-rule whose add list matches it, with the rule's precondition placed above it; when preconditions match, the F-rule is applied to the state; it stops when the goal stack is empty. Compound goals are re-examined to handle interacting goals.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q35",
+    "document": "book",
+    "type": "explanation",
+    "question": "What is the frame problem?",
+    "expected_answer": "The problem of specifying which wffs in a state description should change and which should not after an action; STRIPS F-rules with short delete and add lists treat most wffs as fixed background.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q36",
+    "document": "book",
+    "type": "explanation",
+    "question": "What is a semantic network?",
+    "expected_answer": "A graph representation of predicate calculus expressions, where nodes represent terms (constants, variables, functional expressions) and arcs represent predicates.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q37",
+    "document": "book",
+    "type": "factual",
+    "question": "Which chapter of the book covers STRIPS?",
+    "expected_answer": "Chapter 7 (basic plan-generating systems), in section 7.5.",
+    "expected_source": "Principles_of_Artificial_Intelligence___PDFDrive__.pdf.txt"
+  },
+  {
+    "id": "q38",
+    "document": "cross",
+    "type": "cross-document",
+    "question": "Which of Rick's projects use Word2Vec and ResNet?",
+    "expected_answer": "The Centroid-X-GAN project on his CV and the minor project on latency space alignment for medical image to clinical text analysis.",
+    "expected_source": [
+      "RickBain.pdf",
+      "MEDICAL_IMAGE.pdf"
+    ]
+  },
+  {
+    "id": "q39",
+    "document": "cross",
+    "type": "cross-document",
+    "question": "At which institute did Rick complete his MCA, and which institute was the minor project submitted to?",
+    "expected_answer": "Both are the Institute of Engineering and Management (IEM), Kolkata.",
+    "expected_source": [
+      "RickBain.pdf",
+      "MEDICAL_IMAGE.pdf"
+    ]
+  },
+  {
+    "id": "q40",
+    "document": "unanswerable",
+    "type": "unanswerable",
+    "question": "Which Azure services has Rick used in his projects?",
+    "expected_answer": "I couldn't find that in the documents.",
+    "expected_source": null
+  },
+  {
+    "id": "q41",
+    "document": "unanswerable",
+    "type": "unanswerable",
+    "question": "What is Rick's expected salary?",
+    "expected_answer": "I couldn't find that in the documents.",
+    "expected_source": null
+  },
+  {
+    "id": "q42",
+    "document": "unanswerable",
+    "type": "unanswerable",
+    "question": "What learning rate was used to train the network in the minor project?",
+    "expected_answer": "I couldn't find that in the documents.",
+    "expected_source": null
+  },
+  {
+    "id": "q43",
+    "document": "unanswerable",
+    "type": "unanswerable",
+    "question": "What grade or score did Rick get in the web design course?",
+    "expected_answer": "I couldn't find that in the documents.",
+    "expected_source": null
+  },
+  {
+    "id": "q44",
+    "document": "unanswerable",
+    "type": "unanswerable",
+    "question": "How do transformer models like ChatGPT work, according to the book?",
+    "expected_answer": "I couldn't find that in the documents.",
+    "expected_source": null
+  }
+]

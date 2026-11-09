@@ -1,0 +1,45 @@
+# secrets and local config (keep the example file)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# logs
+*.log
+
+# generated indexes (local_index.json and any experiment index like idx_500.json)
+data/*.json
+data/*.tmp
+
+# evaluation: keep summary.csv, ignore per-run files (they contain full answers)
+eval/results/*.json
+
+# private documents: keep the folder, ignore its contents
+data/sample_docs/*
+!data/sample_docs/.gitkeep
+
+# safety net: no PDFs anywhere (your documents, the textbook)
+*.pdf
+
+# Azure tooling (Stage 2)
+.azure/

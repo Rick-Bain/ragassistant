@@ -1,0 +1,11 @@
+openai>=1.40.0
+numpy>=1.26.0
+pypdf>=4.2.0
+python-dotenv>=1.0.0
+streamlit>=1.38.0
+
+# Only needed when you switch to Azure (VECTOR_STORE=azure_search or Blob upload).
+# Safe to install now so the switch is a config change.
+azure-search-documents>=11.6.0
+azure-storage-blob>=12.19.0
+azure-identity>=1.17.0
